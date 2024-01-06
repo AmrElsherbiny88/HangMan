@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap\cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="mainfest.json">
+    <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials" />
+
+    <title>HangMan</title>
+</head>
+<body>
+
+
+
+  <!-- loading page start -->
+  <div class="loader">
+    <div>
+      <h1 class="me-3 text-light">HangMan</h1>
+    </div>
+
+  </div>
+  <!-- loading page end -->
+
+  
+    <section class="container mt-3 text-center"> 
+       <div class="info d-flex justify-content-between">
+         <h6>HangMan</h6>
+         <h6>Word Category : <span class="Category"></span></h6>
+         
+         
+       </div>
+      
+      
+    </section>
+
+    <div class="d-flex text-center w-100 bttt">
+      <button class="reloaddd mt-2" id="install_button" hidden>Install the app</button>
+      <button id="reloaddd" class="reloadd mt-2" onclick="window.location.reload()">Restart</button>
+     </div>
+
+    <section class="container">
+        <div class="row">
+           <div class="col-lg-6 col-md-6 col-xl-6 hangman text-center">
+             <div class="The-draw text-center">
+                <div class="stand"></div>
+                <div class="hang"></div>
+                <div class="rope"></div>
+                <div class="man">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm"></div>
+                    <div class="legs"></div>
+                </div>
+             </div>
+           </div>
+
+           <div class="letters-guess col-lg-6 col-md-6 col-xl-6 mt-5"></div>
+        </div>
+        <div class="letters col-lg-6 col-md-6 col-xl-6 mt-5  text-center"></div>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- darkmode buttons -->
+
+  <div class="theme-btn-container" id="theme-btn"></div>
+   
+<div class="footer"> <p>Made By <a href="https://portfolio-update-amrelsherbiny.netlify.app/">AmrElsherbiny</a></p> </div>
+  <audio id="success" src="yay-6120.mp3" preload="auto"></audio>
+  <audio id="fail" src="negative_beeps-6008.mp3" preload="auto"></audio>
+    <script src="instt.js"></script>
+    <script src="script.js"></script>
+    <script src="Bootstrap\cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
