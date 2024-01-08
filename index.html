@@ -15,7 +15,7 @@
 
 
   <!-- loading page start -->
-  <div class="loader">
+  <div id="loader" class="loader">
     <div>
       <h1 class="me-3 text-light">HangMan</h1>
     </div>
@@ -80,7 +80,10 @@
 <div class="footer"> <p>Made By <a href="https://portfolio-update-amrelsherbiny.netlify.app/">AmrElsherbiny</a></p> </div>
   <audio id="success" src="yay-6120.mp3" preload="auto"></audio>
   <audio id="fail" src="negative_beeps-6008.mp3" preload="auto"></audio>
-    <script src="instt.js"></script>
+  <script integrity="">
+    navigator.serviceWorker.register('sw.js');
+</script> 
+  <script src="instt.js"></script>
     <script src="script.js"></script>
     <script src="Bootstrap\cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.bundle.min.js"></script>
 </body>
