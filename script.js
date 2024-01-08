@@ -1,12 +1,13 @@
 
 // loading page start
 window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-  
+   
     loader.classList.add("loader--hidden");
   
     loader.addEventListener("transitionend", () => {
-      document.body.removeChild(loader);
+        //remove loader
+        loader.classList.add("loader--no-display");
+
     });
   });
 //   loading page end
